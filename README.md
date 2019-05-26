@@ -1,2 +1,2 @@
 # Course-work-management-platform
-this is a lab
+i don't want say you anymore
