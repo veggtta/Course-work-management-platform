@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" prefHeight="300.0" prefWidth="400.0">
+      <children>
+            <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Pictures/白色.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="69.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Pictures/temp.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="78.0" layoutY="103.0" spacing="10.0">
+               <children>
+                  <VBox spacing="8.0">
+                     <children>
+                    <Label fx:id="labelAccount" alignment="CENTER" style="&#10;" text="账号" textAlignment="CENTER" wrapText="false">
+                      <font>
+                        <Font size="18.0" />
+                      </font>
+                    </Label>
+                        <Label fx:id="labelPasswd" alignment="CENTER" style="&#10;" text="密码" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelAccountType" alignment="CENTER" style="&#10;" text="账户类型" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <ComboBox editable="true" opacity="0.6" prefHeight="23.0" prefWidth="161.0" />
+                        <PasswordField opacity="0.6" />
+                        <MenuButton mnemonicParsing="false" opacity="0.6" prefHeight="23.0" prefWidth="161.0">
+                          <items>
+                            <MenuItem fx:id="itemTeacher" mnemonicParsing="false" text="教师" />
+                            <MenuItem fx:id="itemStu" mnemonicParsing="false" text="学生" />
+                              <MenuItem fx:id="itemAdmin" mnemonicParsing="false" text="管理员" />
+                          </items>
+                        </MenuButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button layoutX="79.0" layoutY="228.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="243.0" text="登录" />
+            <HBox alignment="CENTER" layoutX="79.0" layoutY="202.0" prefHeight="16.0" prefWidth="243.0" spacing="100.0">
+               <children>
+                  <CheckBox fx:id="cb_1" mnemonicParsing="false" text="记住密码" />
+                  <CheckBox fx:id="cb_2" mnemonicParsing="false" text="自动登录" />
+               </children>
+            </HBox>
+            <Label alignment="CENTER" layoutX="79.0" layoutY="38.0" prefHeight="32.0" prefWidth="243.0" text="课程作业管理平台" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="28.0" />
+               </font>
+            </Label>
+      </children>
+      </AnchorPane>
+   </children>
+</VBox>
